@@ -6,3 +6,7 @@
 - I'll add more general thoughts here as I have them.
 
 https://www.markdownguide.org/
+
+```javascript
+const test = "This is a code-snippet test";
+```
