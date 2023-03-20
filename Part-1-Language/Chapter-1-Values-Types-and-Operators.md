@@ -7,8 +7,22 @@
 - Every value has a type that determines its role, such as numbers, text, functions, etc.
 - Every value has to be stored somewhere, and if you want to use a gigantic amount of them at the same time, you might run out of memory.
 ## Numbers
+- *Numbers* are numeric values, unsurprisingly. Examples include,
+```javascript
+13, 9.81, 2.998e8
+```
+- *Integers* are whole numbers, also unsurprisingly.
 ### Arithmetic
+- No different than arithmetic outside of JavaScript.
+- Operators include +, -, *, /, etc.
+```javascript
+100 + 4 * 11
+```
+- The % symbol represents the *remainder* operation, X % Y is the remainder of dividing X by Y. Often referred to as *modulo*.
 ### Special Numbers
+- Three special values in JavaScript that are considered numbers but don't behave like normal numbers.
+- The first two are *Infinity* and *-Infinity*, which represent the positive and negative infinities.
+- The third, *NaN*, stands for "not a number", even though it is a value of the number-type. This is the result of any operation that doesn't yield a meaningful result.
 ## Strings
 ## Unary Operators
 ## Boolean Values
