@@ -24,6 +24,19 @@
 - The first two are *Infinity* and *-Infinity*, which represent the positive and negative infinities.
 - The third, *NaN*, stands for "not a number", even though it is a value of the number-type. This is the result of any operation that doesn't yield a meaningful result.
 ## Strings
+- *Strings* are used to represent text. They are written by enclosing their content in quotes. Single, double quotes, or backticks all work.
+- Almost anything can be put in quotes and JavaScript will make it a string value.
+- *Escaping* the character is when a backslash (\) is found inside quoted text.
+- *n* after a backslash indicates a new line, and *t* after a backslash indicates a tab.
+- If two backslashes follow each other, they will collapse together and only will be left with one in the string.
+- JavaScript uses the *Unicode* standard to model strings as a series of bits -- therefore a string can also be described by a sequence of numbers.
+- The + operator doesn't add strings together but instead *concatenates* -- essentially gluing them together.
+```javascript
+"ev" + "an" = "evan"
+```
+- Strings have a number of associated functions (*methods*) that can be used to perform operations on them.
+- Backtick-quoted strings are unique, usually called *template literals*, as they can embed other values.
+- Text within *${}* in a template literal will be computed, converted to a string, and included in said position.
 ## Unary Operators
 ## Boolean Values
 ### Comparison
