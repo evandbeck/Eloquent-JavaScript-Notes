@@ -38,6 +38,10 @@
 - Backtick-quoted strings are unique, usually called *template literals*, as they can embed other values.
 - Text within *${}* in a template literal will be computed, converted to a string, and included in said position.
 ## Unary Operators
+- Not all operators are symbols, some are written as words.
+- The *typeof* operator produces a string value naming the type of value that you give it.
+- Operators that use two values are called *binary operators* while those that take one are *unary operators*.
+- The minus operator can be used as both.
 ## Boolean Values
 ### Comparison
 ### Logical Operators
