@@ -65,5 +65,7 @@ false ? 1 : 2
 // 2
 ```
 ## Empty Values
+- Two special values, written *null* and *undefined*, are used to denote the absence of a "meaningful" value. While values themselves, they carry no information.
+- Many operations in the language that don't produce a meaningful value yield *undefined* simply because they have to yield some value.
 ## Automatic Type Conversion
 ### Short-Circuiting of Logical Operators
