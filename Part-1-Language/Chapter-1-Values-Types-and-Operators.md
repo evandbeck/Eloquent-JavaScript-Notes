@@ -32,7 +32,8 @@
 - JavaScript uses the *Unicode* standard to model strings as a series of bits -- therefore a string can also be described by a sequence of numbers.
 - The + operator doesn't add strings together but instead *concatenates* -- essentially gluing them together.
 ```javascript
-"ev" + "an" = "evan"
+"ev" + "an"
+// evan
 ```
 - Strings have a number of associated functions (*methods*) that can be used to perform operations on them.
 - Backtick-quoted strings are unique, usually called *template literals*, as they can embed other values.
@@ -43,8 +44,26 @@
 - Operators that use two values are called *binary operators* while those that take one are *unary operators*.
 - The minus operator can be used as both.
 ## Boolean Values
+- A *Boolean* type which has just two values, true or false.
 ### Comparison
+- The *>* and *<* signs are the traditional symbols for "is greater than" and "is less than," respectively, and are binary operators.
+- Applying either results in a Boolean value that indicates wether they hold true.
+- Strings are generally ordered alphabetically, but uppercase are always less than lowercase, and non-alphabetic characters are also included in the ordering.
+- When comparing strings, JavaScript covers every character from left to right, comparing the Unicode codes one by one.
+- Other similar operators are *>=* (greater than or equal to), *<=* (less than or equal to), *==* (equal to), and *!=* (not equal to).
+- There is only one value in JavaScript that is not equal to itself, NaN. NaN is supposed to denote the result of a nonsensical computation, and as such, isn't equal to the result of any other nonsensical computations.
 ### Logical Operators
+- JavaScript supports three logical operators: *and*, *or*, and *not*. These can be used to "reason" about Booleans.
+- The *&&* operator represents logical *and*, is a binary operator, and its result is only tru if both the values given are true.
+- The *||* operator denotes logical *or*, is a binary operator, and it produces true if either of the values given to it is true.
+- *Not* is written as an exclamation mark (*!*), is a unary operator that flips the value given to it -- !true produces false and !false produces true.
+- The *conditional operator*, or *ternary operator* (because it is the only such operator in JavaScript), operates on three values, separated by a "?" and a ":" -- the value on the left of the ? determines which of the two subsequent values will come out, if true then the first, if false then the second.
+```javascript
+true ? 1 : 2
+// 1
+false ? 1 : 2
+// 2
+```
 ## Empty Values
 ## Automatic Type Conversion
 ### Short-Circuiting of Logical Operators
