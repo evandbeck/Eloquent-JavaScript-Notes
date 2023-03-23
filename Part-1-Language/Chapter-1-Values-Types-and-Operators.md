@@ -68,4 +68,8 @@ false ? 1 : 2
 - Two special values, written *null* and *undefined*, are used to denote the absence of a "meaningful" value. While values themselves, they carry no information.
 - Many operations in the language that don't produce a meaningful value yield *undefined* simply because they have to yield some value.
 ## Automatic Type Conversion
+- When an operator is applied to the "wrong" type of value, JavaScript will quietly convert that value to the type it needs, using a set of rules that often aren't what one would expect.
+- This is called *type coercion*.
+- If no automatic type conversion is required, there are two additional operators: *===* and *!==*, the first tests whether a value is precisely equal to the other, and the second tests whether it is not precisely equal.
+- It is best to use === and !== proactively to prevent unwanted type conversions.
 ### Short-Circuiting of Logical Operators
