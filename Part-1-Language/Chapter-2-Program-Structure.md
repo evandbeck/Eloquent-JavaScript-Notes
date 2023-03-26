@@ -21,8 +21,18 @@ let one, = 1, two = 2;
 - The collection of bindings and their values that exist at a given time is called the *environment*.
 - When a program starts, the environment isn't empty -- it always contains bindings that are part of the language standard, as well as bindings that provide ways to interact with the surrounding sytem.
 ## Functions
+- Many values provided in the default environment have the tytpe *function*. A function is a piece of program wrapped in a value, and such values can be *applied* in order to run the wrapped program.
+- Executing a function is called *invoking*, *calling*, or *applying* it. Call a function by putting parenthesis after an expression that produces a function value.
+- Values given to functions are called *arguments*, and one function may contain several arguments.
+```javascript
+prompt("Enter passcode!");
+```
 ## The console.log Function
+- Most JavaScript systems (including all modern web browsers and Node.js) provide a *console.log* function that writes out its arguments to some text output device. In browsers, the output lands in the JavaScript console.
+- console.log isn't a simple binding, it's actually an expression that retrieves the *log* property from the value held by the *console* binding.
 ## Return Values
+- Showing a dialog box or writing text to a screen is a *side effect*. A lot of functions are useful because of the side effects they produce.
+- When a function produces a value, it is said to *return* that value. Anything that produces a value is an expression in JavaScript, which means function calls can be used within larger expressions.
 ## Control Flow
 ## Conditional Execution
 ## while and do Loops
