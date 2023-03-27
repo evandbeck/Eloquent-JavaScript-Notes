@@ -34,12 +34,33 @@ prompt("Enter passcode!");
 - Showing a dialog box or writing text to a screen is a *side effect*. A lot of functions are useful because of the side effects they produce.
 - When a function produces a value, it is said to *return* that value. Anything that produces a value is an expression in JavaScript, which means function calls can be used within larger expressions.
 ## Control Flow
+- When a program contains more than one statement, the statements are executed as if they are a story, from top to bottom.
 ## Conditional Execution
+- *Conditional execution* is when the program takes the proper branch based on the situation at hand.
+- Conditional execution is created with the *if* keyword in JavaScript.
+- The statement after the *if* is wrapped in braces ({}). This is called a *block*.
+- Use the *else* keyword to create a second, alternative execution path. This can be "chained" together using *else if*.
 ## while and do Loops
-## Indenting Code
+- If the goal of a program is to run code multiple times, this form of control is called a *loop*.
+```javascript
+let number = 0;
+while (number <= 12) {
+    console.log(number);
+    number = number + 2;
+}
+```
+- A statement starting with the keyword *while* creates a loop.
+- The loop continuously executes as long as the expression produces a true boolean value.
+- A *do* loop always executes its body at least once, and it begins testing whether it should stop only after the first execution.
 ## for Loops
+- Many loops follow a pattern that first uses a "counter" binding created to track the progress of the loop, then a *while* loop, usually with a test expression that checks whether the counter has reached its value, and at the end the counter is updated to track progress.
+- JavaScript and similar languages provide a slightly shorter and more comprehensive form, the *for* loop.
+```javascript
+for(let number = 0; number <= 12; number = number + 2) {
+    console.log(number);
+}
+```
+- The part before the semicolon *initializes* the loop, usually defined by a binding. The second part is the expression that *checks* whether the loop must continue. The final part *updates* the state of the loop after every iteration.
 ## Breaking Out of a Loop
-## Updating Bindings Succinctly
-## Dispatching on a Value with switch
-## Capitalization
-## Comments
+- A special statement called *break* will immediately jump out of an enclosed loop.
+- If a program has an end condition that always produces "true", the program would be stuck in an *infinite loop*.
